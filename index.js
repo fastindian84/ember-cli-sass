@@ -14,7 +14,6 @@ function SASSPlugin(optionsFn) {
 
 SASSPlugin.prototype.toTree = function(tree, inputPath, outputPath, inputOptions) {
   var options = Object.assign({}, this.optionsFn(), inputOptions);
-  var inputTrees;
 
   var inputTrees = [
     new Funnel(tree, {
